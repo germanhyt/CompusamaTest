@@ -77,6 +77,11 @@ server.listen(3000, function() {
     console.log('Aplicacion de NodeJS ' + port + ' Iniciada...')
 });
 
+app.get('/', (req,res) => {
+    res.send('Ruta raiz backend');
+
+});
+
 
 // server.listen(3000,192.168.1.10||'localhost', function() {
 //     console.log('Aplicacion de NodeJS ' + port + ' Iniciada...')
