@@ -79,7 +79,6 @@ server.listen(3000, function() {
 
 app.get('/', (req,res) => {
     res.send('Ruta raiz backend');
-
 });
 
 

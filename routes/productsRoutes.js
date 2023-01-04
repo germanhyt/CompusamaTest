@@ -3,6 +3,9 @@ const passport = require('passport');
 
 module.exports = (app, upload) => {
 
+    
+    app.get('/api/GestionarInvetario/v1/products/getAll', ProductsController.getAll);
+
     app.get('/api/GestionarInvetario/v1/products/findByCategory/:id_category', passport.authenticate('jwt', {session: false}), ProductsController.findByCategory);
 
 
